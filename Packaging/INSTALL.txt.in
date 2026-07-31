@@ -1,0 +1,77 @@
+PromLight Universal @VERSION@
+===============================
+
+For macOS @MINIMUM_SYSTEM_VERSION@ or later on Apple silicon and Intel Macs.
+
+IMPORTANT SECURITY NOTICE
+-------------------------
+
+This preview build is ad-hoc signed and has NOT been notarized by Apple.
+macOS is therefore expected to block it on first launch and show a security
+warning. Only continue if you received this package directly from someone you
+trust and the checksum matches.
+
+The checksum can detect a changed or corrupted download. It does not establish
+the publisher's identity if the ZIP and checksum came from the same untrusted
+source.
+
+VERIFY THE DOWNLOAD (RECOMMENDED)
+---------------------------------
+
+Keep these two files together in the same folder:
+
+  @ZIP_NAME@
+  @CHECKSUM_NAME@
+
+Open Terminal, change to that folder, and run:
+
+  shasum -a 256 -c @CHECKSUM_NAME@
+
+The expected result is:
+
+  @ZIP_NAME@: OK
+
+If the result is not OK, stop and request a fresh copy.
+
+INSTALL
+-------
+
+1. Double-click @ZIP_NAME@ if your Mac did not unzip it automatically.
+2. Open the extracted @RELEASE_NAME@ folder.
+3. Drag PromLight.app into the Applications folder.
+4. In Applications, double-click PromLight once.
+
+FIRST LAUNCH: EXPECTED GATEKEEPER WARNING
+-----------------------------------------
+
+Because this preview is not Developer ID signed and notarized, macOS may say
+that Apple cannot check it for malicious software or that the developer cannot
+be verified. After attempting to open PromLight once:
+
+1. Open the Apple menu and choose System Settings.
+2. Select Privacy & Security and scroll down to the Security section.
+3. Click Open Anyway for PromLight. The button is normally available for about
+   one hour after the blocked launch attempt.
+4. Authenticate if asked. When the warning appears again, click Open.
+
+PromLight is then saved as an exception and should open normally in future.
+On macOS Sequoia and later, do not rely on old Control-click instructions;
+Apple requires this Privacy & Security flow. On a managed Mac, an administrator
+may prevent the override.
+
+If macOS says that PromLight "will damage your computer" or that the app is
+damaged, stop. Do not bypass that warning. Delete the copy and request a fresh
+package.
+
+Apple's current guidance:
+  https://support.apple.com/102445
+
+NOTE FOR ZERO-WARNING DISTRIBUTION
+----------------------------------
+
+Ad-hoc signing is suitable for local testing, but it cannot provide a normal
+zero-warning installation for another person. For that experience, the
+distributor must sign PromLight with an Apple Developer ID Application
+certificate, enable hardened runtime, submit it to Apple's notary service, and
+staple the accepted notarization ticket before creating the final ZIP.
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>PromLight</string>
+	<key>CFBundleExecutable</key>
+	<string>PromLight</string>
+    <key>CFBundleIdentifier</key>
+    <string>@BUNDLE_IDENTIFIER@</string>
+    <key>CFBundleIconFile</key>
+    <string>PromLight.icns</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>PromLight</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>@MARKETING_VERSION@</string>
+	<key>CFBundleVersion</key>
+	<string>@BUILD_VERSION@</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>@MINIMUM_SYSTEM_VERSION@</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>PromLight uses Bluetooth to communicate with your PromLight status light.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2026 PromLight Universal contributors.</string>
+</dict>
+</plist>
